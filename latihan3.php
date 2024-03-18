@@ -1,7 +1,6 @@
 <?php
 include 'function.php';
-$film=query("SELECT * from film");
-
+$film=query();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +10,7 @@ $film=query("SELECT * from film");
     <title>Document</title>
 </head>
 <body>
+    <a href="tambah.php">tambah</a>
     <table border="1" cellpadding="10" cellspacing="0">
         <tr>
             <th>no</th>
