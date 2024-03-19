@@ -1,4 +1,8 @@
 <?php
+session_start();
+if (!isset($_SESSION['login'])) {
+    header('location:login.php');
+}
 include 'function.php';
 if (isset($_POST['submit'])) {
   $tambah=tambahdata($_POST);
